@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Nitish's Travel Blog – Explore destinations, travel tips, and inspiring stories from around the world." />
+    <title>Nitish's Travel Blog</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-compass me-2"></i>Nitish's Travel Blog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tips">Travel Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative text-white text-center">
+            <p class="hero-tagline text-uppercase letter-spacing-wide mb-3">Welcome to my world</p>
+            <h1 class="display-3 fw-bold hero-title mb-4">Explore the World<br>One Story at a Time</h1>
+            <p class="lead hero-subtitle mb-5">
+                Travel journals, hidden gems, and honest tips from a passionate explorer.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#destinations" class="btn btn-primary btn-lg px-4">Explore Destinations</a>
+                <a href="#about" class="btn btn-outline-light btn-lg px-4">About Me</a>
+            </div>
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator mt-5">
+                <a href="#about" aria-label="Scroll down">
+                    <i class="bi bi-chevron-double-down fs-4 text-white-50"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <div class="about-img-wrapper mx-auto">
+                        <img src="images/about.jpg"
+                            alt="Nitish – travel blogger standing in front of a mountain landscape"
+                            class="about-img img-fluid rounded-circle shadow-lg"
+                            onerror="this.src='https://via.placeholder.com/400x400/3a7bd5/ffffff?text=Nitish'" />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title mt-2 mb-4">Hi, I'm Nitish 👋</h2>
+                    <p class="text-muted mb-3">
+                        I'm a passionate traveler and storyteller who believes every journey leaves a mark on
+                        your soul. From the snow-capped peaks of the Himalayas to the sun-soaked beaches of
+                        Southeast Asia, I've been chasing experiences that change perspectives.
+                    </p>
+                    <p class="text-muted mb-4">
+                        This blog is my travel diary — raw, honest, and full of practical tips to help you
+                        plan your next adventure without the stress.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-4">
+                            <div class="stat-card text-center p-3 rounded-3 bg-white shadow-sm">
+                                <h3 class="stat-number fw-bold mb-0">42+</h3>
+                                <small class="text-muted">Countries Visited</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="stat-card text-center p-3 rounded-3 bg-white shadow-sm">
+                                <h3 class="stat-number fw-bold mb-0">150+</h3>
+                                <small class="text-muted">Blog Posts</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="stat-card text-center p-3 rounded-3 bg-white shadow-sm">
+                                <h3 class="stat-number fw-bold mb-0">8yr</h3>
+                                <small class="text-muted">Of Travel</small>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary px-4">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED DESTINATIONS ========== -->
+    <section id="destinations" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Where I've Been</span>
+                <h2 class="section-title mt-2">Featured Destinations</h2>
+                <p class="text-muted mx-auto" style="max-width:560px;">
+                    A curated selection of places that left me speechless — and kept me coming back for more.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="text-center mb-4" id="destinationFilters">
+                <button class="btn btn-sm filter-btn active me-2 mb-2" data-filter="all">All</button>
+                <button class="btn btn-sm filter-btn me-2 mb-2" data-filter="asia">Asia</button>
+                <button class="btn btn-sm filter-btn me-2 mb-2" data-filter="europe">Europe</button>
+                <button class="btn btn-sm filter-btn me-2 mb-2" data-filter="americas">Americas</button>
+            </div>
+
+            <div class="row g-4" id="destinationCards">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="asia">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-kyoto.jpg" class="card-img-top dest-img"
+                                alt="Golden Pavilion temple in Kyoto, Japan"
+                                onerror="this.src='https://via.placeholder.com/600x400/e8a87c/ffffff?text=Kyoto%2C+Japan'" />
+                            <span class="dest-badge badge">Asia</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Kyoto, Japan</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                Ancient temples, bamboo forests, and the world's most serene tea ceremonies.
+                                Kyoto is Japan's soul in one city.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: March – May &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $$
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="europe">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-santorini.jpg" class="card-img-top dest-img"
+                                alt="Blue-domed churches of Santorini, Greece"
+                                onerror="this.src='https://via.placeholder.com/600x400/3a7bd5/ffffff?text=Santorini%2C+Greece'" />
+                            <span class="dest-badge badge">Europe</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Santorini, Greece</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                Iconic blue domes, volcanic black sand beaches, and sunsets that feel like
+                                a painting. Worth every penny.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: Jun – Sep &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $$$
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="americas">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-patagonia.jpg" class="card-img-top dest-img"
+                                alt="Torres del Paine mountains in Patagonia, Chile"
+                                onerror="this.src='https://via.placeholder.com/600x400/27ae60/ffffff?text=Patagonia%2C+Chile'" />
+                            <span class="dest-badge badge">Americas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Patagonia, Chile</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                Raw, untamed wilderness at the end of the world. Torres del Paine will
+                                challenge you and reward you in equal measure.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: Nov – Feb &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $$
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="asia">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-bali.jpg" class="card-img-top dest-img"
+                                alt="Rice terraces in Bali, Indonesia"
+                                onerror="this.src='https://via.placeholder.com/600x400/8e44ad/ffffff?text=Bali%2C+Indonesia'" />
+                            <span class="dest-badge badge">Asia</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Bali, Indonesia</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                Emerald rice terraces, ocean temples, and a culture so rich it stays with you
+                                long after you leave.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: Apr – Oct &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="europe">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-prague.jpg" class="card-img-top dest-img"
+                                alt="Charles Bridge and old town of Prague, Czech Republic"
+                                onerror="this.src='https://via.placeholder.com/600x400/c0392b/ffffff?text=Prague%2C+Czech+Republic'" />
+                            <span class="dest-badge badge">Europe</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Prague, Czech Republic</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                A fairy-tale city of Gothic spires, cozy cafes, and cobblestone streets
+                                that feel frozen in time.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: Mar – May &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $$
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 dest-item" data-category="americas">
+                    <article class="dest-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="dest-img-wrapper">
+                            <img src="images/dest-machu-picchu.jpg" class="card-img-top dest-img"
+                                alt="Machu Picchu ruins in Peru"
+                                onerror="this.src='https://via.placeholder.com/600x400/f39c12/ffffff?text=Machu+Picchu%2C+Peru'" />
+                            <span class="dest-badge badge">Americas</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Machu Picchu, Peru</h5>
+                                <div class="star-rating text-warning small">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                The Lost City of the Incas perched high in the Andes. A bucket-list wonder
+                                that exceeds every expectation.
+                            </p>
+                            <div class="d-flex align-items-center text-muted small">
+                                <i class="bi bi-calendar3 me-1"></i> Best time: May – Oct &nbsp;|&nbsp;
+                                <i class="bi bi-currency-dollar ms-1 me-1"></i> $$
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div><!-- /row -->
+        </div>
+    </section>
+
+    <!-- ========== TRAVEL TIPS ========== -->
+    <section id="tips" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Learn from the Miles</span>
+                <h2 class="section-title mt-2">Travel Tips</h2>
+                <p class="text-muted mx-auto" style="max-width:560px;">
+                    Hard-earned advice from 8 years on the road — so you can travel smarter, safer, and cheaper.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-suitcase-lg"></i></div>
+                        <h5 class="fw-semibold mb-2">Pack Light, Travel Right</h5>
+                        <p class="text-muted small mb-0">
+                            Stick to a carry-on whenever possible. Rolling clothes saves space, packing cubes keep
+                            you organised, and a lighter bag means more freedom and fewer fees.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-shield-check"></i></div>
+                        <h5 class="fw-semibold mb-2">Always Get Travel Insurance</h5>
+                        <p class="text-muted small mb-0">
+                            One medical emergency abroad can cost tens of thousands. A good travel policy is the
+                            best $50 you'll spend. Don't skip it — ever.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-translate"></i></div>
+                        <h5 class="fw-semibold mb-2">Learn Basic Local Phrases</h5>
+                        <p class="text-muted small mb-0">
+                            "Hello", "Thank you", and "Where is the toilet?" in the local language opens doors,
+                            earns respect, and leads to the best off-menu food.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-currency-exchange"></i></div>
+                        <h5 class="fw-semibold mb-2">Use a No-Fee Travel Card</h5>
+                        <p class="text-muted small mb-0">
+                            Avoid airport currency kiosks. Cards like Wise or Revolut give you near-interbank
+                            exchange rates and save you hundreds over a long trip.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-cloud-download"></i></div>
+                        <h5 class="fw-semibold mb-2">Download Offline Maps</h5>
+                        <p class="text-muted small mb-0">
+                            Google Maps offline or Maps.me are lifesavers. Download the region before you land so
+                            you never need expensive roaming data to navigate.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tip-card p-4 rounded-3 bg-white shadow-sm h-100">
+                        <div class="tip-icon mb-3"><i class="bi bi-sunrise"></i></div>
+                        <h5 class="fw-semibold mb-2">Visit Attractions Early</h5>
+                        <p class="text-muted small mb-0">
+                            The magic hour before 9 AM gives you iconic spots almost to yourself. Sunrise at
+                            Angkor Wat or the Eiffel Tower with no crowds is a completely different experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Through My Lens</span>
+                <h2 class="section-title mt-2">Photo Gallery</h2>
+                <p class="text-muted mx-auto" style="max-width:560px;">
+                    Moments captured along the way — click any photo to view it full size.
+                </p>
+            </div>
+            <div class="row g-3" id="galleryGrid">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-1.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-1.jpg"
+                        data-caption="Sunrise over the rice terraces, Bali">
+                        <img src="images/gallery-1.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Sunrise over Bali rice terraces"
+                            onerror="this.src='https://via.placeholder.com/400x300/e8a87c/ffffff?text=Bali+Sunrise'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-2.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-2.jpg"
+                        data-caption="Cherry blossom path, Kyoto">
+                        <img src="images/gallery-2.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Cherry blossom path in Kyoto"
+                            onerror="this.src='https://via.placeholder.com/400x300/f8b4c8/ffffff?text=Kyoto+Blossom'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-3.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-3.jpg"
+                        data-caption="Oia village at sunset, Santorini">
+                        <img src="images/gallery-3.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Oia village at sunset in Santorini"
+                            onerror="this.src='https://via.placeholder.com/400x300/3a7bd5/ffffff?text=Santorini+Sunset'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-4.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-4.jpg"
+                        data-caption="Torres del Paine glacier, Patagonia">
+                        <img src="images/gallery-4.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Torres del Paine glacier in Patagonia"
+                            onerror="this.src='https://via.placeholder.com/400x300/27ae60/ffffff?text=Patagonia+Ice'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-5.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-5.jpg"
+                        data-caption="Charles Bridge at dawn, Prague">
+                        <img src="images/gallery-5.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Charles Bridge at dawn in Prague"
+                            onerror="this.src='https://via.placeholder.com/400x300/c0392b/ffffff?text=Prague+Dawn'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-6.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-6.jpg"
+                        data-caption="Machu Picchu morning mist, Peru">
+                        <img src="images/gallery-6.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Machu Picchu in morning mist"
+                            onerror="this.src='https://via.placeholder.com/400x300/f39c12/ffffff?text=Machu+Picchu'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-7.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-7.jpg"
+                        data-caption="Street food market, Bangkok">
+                        <img src="images/gallery-7.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Night street food market in Bangkok"
+                            onerror="this.src='https://via.placeholder.com/400x300/8e44ad/ffffff?text=Bangkok+Market'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/gallery-8.jpg" class="gallery-item d-block" data-bs-toggle="modal"
+                        data-bs-target="#lightboxModal" data-img="images/gallery-8.jpg"
+                        data-caption="Northern Lights, Iceland">
+                        <img src="images/gallery-8.jpg" class="gallery-thumb img-fluid rounded"
+                            alt="Northern Lights over Iceland"
+                            onerror="this.src='https://via.placeholder.com/400x300/1abc9c/ffffff?text=Iceland+Lights'" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in fs-4 text-white"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-label="Image lightbox" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-3">
+                    <img id="lightboxImg" src="" alt="" class="img-fluid rounded" style="max-height:80vh;" />
+                    <p id="lightboxCaption" class="text-white-50 mt-3 mb-0 small"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <span class="section-label">Say Hello</span>
+                        <h2 class="section-title mt-2">Get in Touch</h2>
+                        <p class="text-muted">
+                            Collaboration ideas, travel questions, or just want to chat? Drop me a message.
+                        </p>
+                    </div>
+                    <!-- Alert placeholder -->
+                    <div id="formAlert" class="alert d-none" role="alert"></div>
+                    <form id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="contactName" class="form-label fw-medium">Your Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Jane Doe"
+                                    required />
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contactEmail" class="form-label fw-medium">Email Address <span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="contactEmail"
+                                    placeholder="jane@example.com" required />
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="contactSubject" class="form-label fw-medium">Subject</label>
+                                <input type="text" class="form-control" id="contactSubject"
+                                    placeholder="Travel collaboration, blog question…" />
+                            </div>
+                            <div class="col-12">
+                                <label for="contactMessage" class="form-label fw-medium">Message <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control" id="contactMessage" rows="5"
+                                    placeholder="Tell me what's on your mind…" required></textarea>
+                                <div class="invalid-feedback">Please enter a message.</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletterCheck" />
+                                    <label class="form-check-label text-muted small" for="newsletterCheck">
+                                        Subscribe me to the newsletter for new posts and travel deals.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn">
+                                    <span class="btn-text">Send Message <i class="bi bi-send ms-1"></i></span>
+                                    <span class="btn-spinner spinner-border spinner-border-sm d-none"
+                                        role="status"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand column -->
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white mb-3"><i class="bi bi-compass me-2"></i>Nitish's Travel Blog</h5>
+                    <p class="text-white-50 small mb-3">
+                        Authentic travel stories, destination guides, and practical tips to inspire your next adventure.
+                    </p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#" aria-label="Instagram" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter / X" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest" class="social-icon"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-sm-6">
+                    <h6 class="text-white fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tips">Travel Tips</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <!-- Destinations -->
+                <div class="col-lg-2 col-sm-6">
+                    <h6 class="text-white fw-semibold mb-3">Destinations</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#destinations">Asia</a></li>
+                        <li><a href="#destinations">Europe</a></li>
+                        <li><a href="#destinations">Americas</a></li>
+                        <li><a href="#destinations">Africa</a></li>
+                        <li><a href="#destinations">Oceania</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-semibold mb-3">Newsletter</h6>
+                    <p class="text-white-50 small mb-3">Get new posts and travel deals straight to your inbox.</p>
+                    <form class="d-flex gap-2" id="newsletterForm">
+                        <input type="email" class="form-control form-control-sm" placeholder="your@email.com" required
+                            aria-label="Email for newsletter" />
+                        <button class="btn btn-primary btn-sm px-3 text-nowrap" type="submit">Subscribe</button>
+                    </form>
+                    <p class="text-white-50 small mt-2">No spam, ever. Unsubscribe anytime.</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4" />
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center text-white-50 small gap-2">
+                <p class="mb-0">&copy; <span id="footerYear"></span> Nitish's Travel Blog. All rights reserved.</p>
+                <p class="mb-0">Built with <i class="bi bi-heart-fill text-danger"></i> &amp; Bootstrap 5 &bull;
+                    Deployed on AWS S3</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
